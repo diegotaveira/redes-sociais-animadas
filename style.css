@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    font-family: 'Poppins'; margin: 0; padding: 0; box-sizing: border-box;
+}
+
+:root{
+    --facebook:#4267b2;
+    --twitter:#1da1f2;
+    --instagran:#e1306c;
+    --github:#333;
+    --youtube:#ff0000;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-color: rgb(193, 235, 197);
+}
+
+.container .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 7px;
+    background-color: #fff;
+     overflow: hidden; 
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.container .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+    
+}
+
+.container .button:hover{
+    width: 200px;
+}
+
+.container .button:hover .icon{
+    color: #fff;
+}
+
+.container .button:nth-child(1):hover .icon{
+    background-color: var(--facebook);
+}
+
+.container .button:nth-child(2):hover .icon{
+    background-color: var(--twitter);
+}
+
+.container .button:nth-child(3):hover .icon{
+    background-color: var(--instagran);
+}
+
+.container .button:nth-child(4):hover .icon{
+    background-color: var(--github);
+}
+
+.container .button:nth-child(5):hover .icon{
+    background-color: var(--youtube);
+}
+
+.container .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.container .button span{
+    font-size: 20px;
+    font-weight: 500px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.container .button:nth-child(1):hover span{
+    color: var(--facebook);
+}
+
+.container .button:nth-child(2):hover span{
+    color: var(--twitter);
+}
+
+.container .button:nth-child(3):hover span{
+    color: var(--instagran);
+}
+
+.container .button:nth-child(4):hover span{
+    color: var(--github);
+}
+
+.container .button:nth-child(5):hover span{
+    color: var(--youtube);
+}
+
+
+
